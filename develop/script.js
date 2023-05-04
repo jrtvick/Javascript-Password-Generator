@@ -55,7 +55,7 @@ window.alert("click", + "Do you want to generate a secure password?")
 
 
 // other
-var generatePassword() =
+//var generatePassword() =
 
 function generatePassword() {
   return 
