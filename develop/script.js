@@ -27,7 +27,7 @@ function generatePassword() {
   var numbers = confirm("For your safety, your password should have a number. \nClick OK to continue.");
   var keyLength = prompt("Password must be between 8 and 128 characters. \nClick OK to continue.");
 
-// These variables play a role in generating the password in my math section lower down.
+// These variables play a role in generating and returning the password in my math section lower down.
   var combinedChars = [];
   var pwString = "";
 
@@ -37,10 +37,10 @@ function generatePassword() {
     return pwString;
   } 
 
-// Using an additional nested if statement that ensures the user applies the correct password length & format.
+// Using a nested if statement to ensure the user applies the correct password length & format.
   if (keyLength < 8 || keyLength > 128) {
-    alert("Your selection must be between 8 and 128 characters.");
-    var keyLength = prompt("Password must be between 8 and 128 characters in length.");
+    alert("Your selection must be between 8 and 128 characters. \nPress the button and try again.");
+    return pwString;
   }
 
 // These nested if statements concatinate the user's selections from the confirmations and prompt together.
