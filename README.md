@@ -2,9 +2,7 @@
 
 ## Description
 
-- What was your motivation? I set out to create a javascript file that would generate a random password for the user. I built this project to test my knowledge of javascript, expand on what I had learned in class through 
-- What problem does it solve?
-- What did you learn?
+I set out to create a javascript file that would generate a random password for the user. I built this project to test my knowledge of javascript and expand on what I had learned in class through outside research. This project solves the problem of coming up with a randomized and best-practice password for users who are signing up for web accounts. This entire experience was a learning experience as javascript is brand new to me and still largely overwhelming, but specifically I learned about using the Math variable with the floor and random methods to generate random results, and how certain aspects of HTML such as classes and ids tie into the javascript process.
 
 ## Installation
 
@@ -12,13 +10,7 @@ N/A
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screenshot of Password Generator supplying a randomized series of characters](./assets/images/Screenshot%20for%20PW%20generator.png)
 
 ## Credits
 
