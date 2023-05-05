@@ -11,7 +11,7 @@ function writePassword() {
 
 //My code starts here!
 
-// Establishing variables for acceptable password characters
+// Establishing variables for all acceptable password characters in four separate arrays.
 var uppercaseABC = ["A","B","C","D",'E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var lowercaseABC = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var specialSymbols = ["!","@","#","$","%","^","&","*","(",")","?","/","<",">",",",".",":",";"];
@@ -20,14 +20,14 @@ var numeric = ["0","1","2","3","4","5","6","7","8","9"];
 // This function is the crux of the password generation, all of the action happens in here.
 function generatePassword() {
 
-// Setting up all the variables to meet the criteria.
-  var uppercase = confirm("For your safety, your password should have an uppercase letter. \nClick OK to continue.");
-  var lowercase = confirm("For your safety, your password should have a lowercase letter. \nClick OK to continue.");
-  var symbols = confirm("For your safety, your password should have a symbol. \nClick OK to continue.");
-  var numbers = confirm("For your safety, your password should have a number. \nClick OK to continue.");
-  var keyLength = prompt("Password must be between 8 and 128 characters. \nClick OK to continue.");
+// Setting up all the variables to meet the assignment criteria through the use of prompt and confirm boxes. Users will be able choose which of these four options they want to apply to their final password.
+  var uppercase = confirm("Want to include Uppercase Letters? \n\nClick OK for yes and cancel for no.");
+  var lowercase = confirm("Want to include Lowercase Letters? \n\nClick OK for yes and cancel for no.");
+  var symbols = confirm("Want to include Symbols and Special Characters? \n\nClick OK for yes and cancel for no.");
+  var numbers = confirm("Want to include Numbers \n\nClick OK for yes and cancel for no.");
+  var keyLength = prompt("Password must be between 8 and 128 characters. \n\nClick OK to continue.");
 
-// These variables play a role in generating and returning the password in my math section lower down.
+// These variables play a role in generating and returning the password in different blocks lower down in my code, most notably the Math variable work towards the bottom.
   var combinedChars = [];
   var pwString = "";
 
@@ -39,7 +39,7 @@ function generatePassword() {
 
 // Using a nested if statement to ensure the user applies the correct password length & format.
   if (keyLength < 8 || keyLength > 128) {
-    alert("Your selection must be between 8 and 128 characters. \nPress the button and try again.");
+    alert("Your selection must be between 8 and 128 characters. \nPress the Generate Password button to try again.");
     return pwString;
   }
 
