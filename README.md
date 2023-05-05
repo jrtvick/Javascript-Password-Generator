@@ -12,10 +12,10 @@ N/A
 
 ![screenshot of Password Generator supplying a randomized series of characters](./assets/images/Screenshot%20for%20PW%20generator.png)
 
-The URL of the deployed application: https://jrtvick.github.io/refactoring/
+The URL of the deployed application: https://jrtvick.github.io/Javascript-Password-Generator/
 
 
-The URL of the GitHub repository: https://github.com/jrtvick/refactoring.git
+The URL of the GitHub repository: https://github.com/jrtvick/Javascript-Password-Generator
 
 ## Credits
 
